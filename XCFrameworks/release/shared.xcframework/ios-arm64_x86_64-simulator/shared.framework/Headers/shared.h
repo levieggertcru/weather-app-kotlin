@@ -320,7 +320,7 @@ __attribute__((swift_name("WeatherRepository")))
 __attribute__((swift_name("NetworkRequesterInterface")))
 @protocol SharedNetworkRequesterInterface
 @required
-- (int32_t)sendGetRequestUrl:(NSString *)url completion:(void (^)(NSArray<NSDictionary<NSString *, id> *> *))completion __attribute__((swift_name("sendGetRequest(url:completion:)")));
+- (void)sendGetRequestUrl:(NSString *)url completion:(void (^)(NSArray<NSDictionary<NSString *, id> *> *))completion __attribute__((swift_name("sendGetRequest(url:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
