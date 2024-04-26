@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedAppFeatureDiContainer, SharedCurrentWeatherDiContainer, SharedWeatherRepository, SharedCurrentWeatherDataLayerDependencies, SharedCurrentWeatherDomainLayerDependencies, SharedGetCurrentWeatherUseCase, SharedWeatherListItemDomainModel, SharedViewMyWeatherListDomainModel, SharedWeatherAPIMethods, SharedWeatherAPIEnvironment, SharedWeatherAPICurrentWeatherMethod, SharedWeatherAPIEnvironmentCompanion, SharedWeatherAPI;
+@class SharedAppFeatureDiContainer, SharedCurrentWeatherDiContainer, SharedCurrentWeatherDomainModel, SharedWeatherRepository, SharedCurrentWeatherDataLayerDependencies, SharedCurrentWeatherDomainLayerDependencies, SharedGetCurrentWeatherUseCase, SharedWeatherListItemDomainModel, SharedViewMyWeatherListDomainModel, SharedWeatherAPIMethods, SharedWeatherAPIEnvironment, SharedWeatherAPICurrentWeatherMethod, SharedWeatherAPIEnvironmentCompanion, SharedWeatherDataModel, SharedWeatherAPI;
 
 @protocol SharedPlatform, SharedNetworkRequesterInterface, SharedGetCurrentWeatherRepositoryInterface;
 
@@ -192,14 +192,14 @@ __attribute__((swift_name("AppFeatureDiContainer")))
 __attribute__((swift_name("GetCurrentWeatherRepositoryInterface")))
 @protocol SharedGetCurrentWeatherRepositoryInterface
 @required
-- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(NSDictionary<NSString *, id> *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("GetCurrentWeatherRepository")))
 @interface SharedGetCurrentWeatherRepository : SharedBase <SharedGetCurrentWeatherRepositoryInterface>
 - (instancetype)initWithWeatherRepository:(SharedWeatherRepository *)weatherRepository __attribute__((swift_name("init(weatherRepository:)"))) __attribute__((objc_designated_initializer));
-- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(NSDictionary<NSString *, id> *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -227,15 +227,17 @@ __attribute__((swift_name("CurrentWeatherDomainLayerDependencies")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CurrentWeatherDomainModel")))
 @interface SharedCurrentWeatherDomainModel : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithCity:(NSString *)city state:(NSString *)state temperatureInFahrenheit:(NSString *)temperatureInFahrenheit __attribute__((swift_name("init(city:state:temperatureInFahrenheit:)"))) __attribute__((objc_designated_initializer));
+@property (readonly) NSString *city __attribute__((swift_name("city")));
+@property (readonly) NSString *state __attribute__((swift_name("state")));
+@property (readonly) NSString *temperatureInFahrenheit __attribute__((swift_name("temperatureInFahrenheit")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("GetCurrentWeatherUseCase")))
 @interface SharedGetCurrentWeatherUseCase : SharedBase
 - (instancetype)initWithGetCurrentWeatherInterface:(id<SharedGetCurrentWeatherRepositoryInterface>)getCurrentWeatherInterface __attribute__((swift_name("init(getCurrentWeatherInterface:)"))) __attribute__((objc_designated_initializer));
-- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(NSDictionary<NSString *, id> *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -300,21 +302,27 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("WeatherAPICurrentWeatherMethod")))
 @interface SharedWeatherAPICurrentWeatherMethod : SharedBase
 - (instancetype)initWithNetworkRequester:(id<SharedNetworkRequesterInterface>)networkRequester environment:(SharedWeatherAPIEnvironment *)environment __attribute__((swift_name("init(networkRequester:environment:)"))) __attribute__((objc_designated_initializer));
-- (void)getCurrentZipCode:(NSString *)zipCode completion:(void (^)(NSDictionary<NSString *, id> *))completion __attribute__((swift_name("getCurrent(zipCode:completion:)")));
+- (void)getCurrentZipCode:(NSString *)zipCode completion:(void (^)(SharedWeatherDataModel *))completion __attribute__((swift_name("getCurrent(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("WeatherDataModel")))
 @interface SharedWeatherDataModel : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithLocationName:(NSString *)locationName locationRegion:(NSString *)locationRegion tempFahrenheit:(SharedDouble * _Nullable)tempFahrenheit __attribute__((swift_name("init(locationName:locationRegion:tempFahrenheit:)"))) __attribute__((objc_designated_initializer));
+- (SharedWeatherDataModel *)doCopyLocationName:(NSString *)locationName locationRegion:(NSString *)locationRegion tempFahrenheit:(SharedDouble * _Nullable)tempFahrenheit __attribute__((swift_name("doCopy(locationName:locationRegion:tempFahrenheit:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *locationName __attribute__((swift_name("locationName")));
+@property (readonly) NSString *locationRegion __attribute__((swift_name("locationRegion")));
+@property (readonly) SharedDouble * _Nullable tempFahrenheit __attribute__((swift_name("tempFahrenheit")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("WeatherRepository")))
 @interface SharedWeatherRepository : SharedBase
 - (instancetype)initWithApi:(SharedWeatherAPI *)api __attribute__((swift_name("init(api:)"))) __attribute__((objc_designated_initializer));
-- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(NSDictionary<NSString *, id> *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedWeatherDataModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
 __attribute__((swift_name("NetworkRequesterInterface")))
