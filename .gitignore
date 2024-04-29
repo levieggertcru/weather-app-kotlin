@@ -5,3 +5,27 @@
 xcuserdata/
 DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+
+# gradle project ignores
+WeatherAppProject/.gradle/
+WeatherAppProject/build/
+WeatherAppProject/*.podspec
+
+# Android Studio project ignores
+WeatherAppProject/.idea/
+WeatherAppProject/*.iml
+WeatherAppProject/captures/
+WeatherAppProject/out/
+WeatherAppProject/local.properties
+
+*.iml
+.gradle
+.idea
+.DS_Store
+build
+captures
+.externalNativeBuild
+.cxx
+local.properties
+xcuserdata
