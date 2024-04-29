@@ -2,6 +2,7 @@ package com.example.weatherapp.features.currentweather.domain.usecases
 
 import com.example.weatherapp.features.currentweather.domain.entities.CurrentWeatherDomainModel
 import com.example.weatherapp.features.currentweather.domain.interfaces.GetCurrentWeatherRepositoryInterface
+import com.example.weatherapp.share.interfaces.cancellable.CancellableInterface
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -11,18 +12,8 @@ class GetCurrentWeatherUseCase(
     private val getCurrentWeatherInterface: GetCurrentWeatherRepositoryInterface
 ) {
 
-    fun getCurrentWeather(zipCode: String, completion: (currentWeather: CurrentWeatherDomainModel) -> Unit) {
+    fun getCurrentWeather(zipCode: String, completion: (currentWeather: CurrentWeatherDomainModel) -> CancellableInterface) {
 
-        getCurrentWeatherInterface.getCurrentWeather(zipCode, completion)
-    }
-
-    fun getCurrentWeatherFlow(zipCode: String): Flow<CurrentWeatherDomainModel> = flow {
-
-        getCurrentWeatherInterface.getCurrentWeather(zipCode, {
-
-            GlobalScope.launch {
-                emit(it)
-            }
-        })
+        return getCurrentWeatherInterface.getCurrentWeather(zipCode, completion)
     }
 }

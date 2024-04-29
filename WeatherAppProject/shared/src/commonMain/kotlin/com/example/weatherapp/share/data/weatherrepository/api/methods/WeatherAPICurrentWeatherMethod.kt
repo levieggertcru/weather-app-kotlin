@@ -2,6 +2,7 @@ package com.example.weatherapp.share.data.weatherapirepository.api.methods
 
 import com.example.weatherapp.share.data.weatherapirepository.api.environment.WeatherAPIEnvironment
 import com.example.weatherapp.share.data.weatherrepository.WeatherDataModel
+import com.example.weatherapp.share.interfaces.cancellable.CancellableInterface
 import com.example.weatherapp.share.interfaces.networkrequester.NetworkRequesterInterface
 
 class WeatherAPICurrentWeatherMethod(
@@ -9,14 +10,14 @@ class WeatherAPICurrentWeatherMethod(
     private val environment: WeatherAPIEnvironment
 ) {
 
-    fun getCurrent(zipCode: String, completion: (currentWeather: WeatherDataModel) -> Unit) {
+    fun getCurrent(zipCode: String, completion: (currentWeather: WeatherDataModel) -> CancellableInterface) {
 
         val apiKey: String = environment.apiKey
         val q: String = zipCode
 
         val urlString: String = environment.baseUrl + "/" + "v1/current.json" + "?key=$apiKey&q=$q"
 
-        networkRequester.sendGetRequest(urlString, {
+        return networkRequester.sendGetRequest(urlString, {
 
             val weatherObject: Map<String, Any> = it.firstOrNull() ?: emptyMap()
 
