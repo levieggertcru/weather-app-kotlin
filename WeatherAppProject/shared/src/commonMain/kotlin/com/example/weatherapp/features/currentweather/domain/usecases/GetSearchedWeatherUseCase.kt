@@ -1,6 +1,7 @@
 package com.example.weatherapp.features.currentweather.domain.usecases
 
 import com.example.weatherapp.share.common.cancellablejob.CancellableJob
+import com.example.weatherapp.share.interfaces.cancellable.CancellableInterface
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -16,7 +17,7 @@ class GetSearchedWeatherUseCase {
     private val context: CoroutineContext = Dispatchers.Main
     private val scope = CoroutineScope(context + SupervisorJob())
 
-    fun getLatestSearches(emitValue: (value: Int) -> Unit): CancellableJob {
+    fun getLatestSearches(emitValue: (value: Int) -> Unit): CancellableInterface {
 
         val job = scope.launch {
             countNumbersFlow().collect() {
