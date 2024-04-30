@@ -8,7 +8,7 @@ import org.mongodb.kbson.ObjectId
 class SearchedWeatherObject: RealmObject {
 
     @PrimaryKey
-    var _id: ObjectId = ObjectId()
+    var id: String = ""
 
     var createdAt: RealmInstant? = null
     var zipCode: String = ""
