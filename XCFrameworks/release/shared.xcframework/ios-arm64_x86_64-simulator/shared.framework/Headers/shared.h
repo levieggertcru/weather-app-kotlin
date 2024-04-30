@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedAppFeatureDiContainer, SharedCurrentWeatherDiContainer, SharedCurrentWeatherDomainModel, SharedWeatherRepository, SharedCurrentWeatherDataLayerDependencies, SharedCurrentWeatherDomainLayerDependencies, SharedGetCurrentWeatherUseCase, SharedGetSearchedWeatherUseCase, SharedWeatherListItemDomainModel, SharedViewMyWeatherListDomainModel, SharedRealmDatabase, SharedSearchedWeatherObjectCompanion, SharedKbsonBsonObjectId, SharedKotlinx_datetimeInstant, SharedAppDatabase, SharedSearchedWeatherDataModel, SharedWeatherAPIMethods, SharedWeatherAPIEnvironment, SharedWeatherAPICurrentWeatherMethod, SharedWeatherAPIEnvironmentCompanion, SharedWeatherDataModel, SharedWeatherAPI, SharedKotlinArray<T>, SharedLibrary_baseVersionId, SharedKbsonBsonValueCompanion, SharedKbsonBsonValue, SharedKbsonBsonBinary, SharedKbsonBsonBoolean, SharedKbsonBsonMaxKey, SharedKbsonBsonMinKey, SharedKbsonBsonNull, SharedKbsonBsonUndefined, SharedKbsonBsonDBPointer, SharedKbsonBsonDateTime, SharedKbsonBsonDecimal128, SharedKbsonBsonDouble, SharedKbsonBsonInt32, SharedKbsonBsonInt64, SharedKbsonBsonJavaScript, SharedKbsonBsonJavaScriptWithScope, SharedKbsonBsonNumber, SharedKbsonBsonRegularExpression, SharedKbsonBsonString, SharedKbsonBsonSymbol, SharedKbsonBsonTimestamp, SharedKbsonBsonType, SharedKbsonBsonObjectIdCompanion, SharedKotlinByteArray, SharedKotlinx_datetimeInstantCompanion, SharedKotlinThrowable, SharedKotlinException, SharedKotlinRuntimeException, SharedKotlinIllegalStateException, SharedLibrary_baseUpdatePolicy, SharedLibrary_baseInitialRealmFileConfiguration, SharedLibrary_baseLogConfiguration, SharedLibrary_baseSort, SharedKotlinPair<__covariant A, __covariant B>, SharedKbsonBsonBinarySubType, SharedKbsonBsonBinaryCompanion, SharedKbsonBsonBooleanCompanion, SharedKbsonBsonDBPointerCompanion, SharedKbsonBsonDateTimeCompanion, SharedKbsonBsonDecimal128Companion, SharedKbsonBsonDoubleCompanion, SharedKbsonBsonInt32Companion, SharedKbsonBsonInt64Companion, SharedKbsonBsonJavaScriptCompanion, SharedKbsonBsonJavaScriptWithScopeCompanion, SharedKbsonBsonRegularExpressionCompanion, SharedKbsonBsonStringCompanion, SharedKbsonBsonSymbolCompanion, SharedKbsonBsonTimestampCompanion, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedKotlinByteIterator, SharedLibrary_baseLogLevel, SharedLibrary_baseRealmClassKind, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedLibrary_baseRealmStorageType;
+@class SharedAppFeatureDiContainer, SharedCurrentWeatherDiContainer, SharedCurrentWeatherDomainModel, SharedWeatherRepository, SharedCurrentWeatherDataLayerDependencies, SharedCurrentWeatherDomainLayerDependencies, SharedGetCurrentWeatherUseCase, SharedGetSearchedWeatherUseCase, SharedCancellableJob, SharedWeatherListItemDomainModel, SharedViewMyWeatherListDomainModel, SharedRealmDatabase, SharedSearchedWeatherObjectCompanion, SharedKbsonBsonObjectId, SharedKotlinx_datetimeInstant, SharedAppDatabase, SharedSearchedWeatherDataModel, SharedWeatherAPIMethods, SharedWeatherAPIEnvironment, SharedWeatherAPICurrentWeatherMethod, SharedWeatherAPIEnvironmentCompanion, SharedWeatherDataModel, SharedWeatherAPI, SharedKotlinCancellationException, SharedKotlinThrowable, SharedKotlinArray<T>, SharedLibrary_baseVersionId, SharedKbsonBsonValueCompanion, SharedKbsonBsonValue, SharedKbsonBsonBinary, SharedKbsonBsonBoolean, SharedKbsonBsonMaxKey, SharedKbsonBsonMinKey, SharedKbsonBsonNull, SharedKbsonBsonUndefined, SharedKbsonBsonDBPointer, SharedKbsonBsonDateTime, SharedKbsonBsonDecimal128, SharedKbsonBsonDouble, SharedKbsonBsonInt32, SharedKbsonBsonInt64, SharedKbsonBsonJavaScript, SharedKbsonBsonJavaScriptWithScope, SharedKbsonBsonNumber, SharedKbsonBsonRegularExpression, SharedKbsonBsonString, SharedKbsonBsonSymbol, SharedKbsonBsonTimestamp, SharedKbsonBsonType, SharedKbsonBsonObjectIdCompanion, SharedKotlinByteArray, SharedKotlinx_datetimeInstantCompanion, SharedKotlinException, SharedKotlinRuntimeException, SharedKotlinIllegalStateException, SharedKotlinUnit, SharedLibrary_baseUpdatePolicy, SharedLibrary_baseInitialRealmFileConfiguration, SharedLibrary_baseLogConfiguration, SharedLibrary_baseSort, SharedKotlinPair<__covariant A, __covariant B>, SharedKbsonBsonBinarySubType, SharedKbsonBsonBinaryCompanion, SharedKbsonBsonBooleanCompanion, SharedKbsonBsonDBPointerCompanion, SharedKbsonBsonDateTimeCompanion, SharedKbsonBsonDecimal128Companion, SharedKbsonBsonDoubleCompanion, SharedKbsonBsonInt32Companion, SharedKbsonBsonInt64Companion, SharedKbsonBsonJavaScriptCompanion, SharedKbsonBsonJavaScriptWithScopeCompanion, SharedKbsonBsonRegularExpressionCompanion, SharedKbsonBsonStringCompanion, SharedKbsonBsonSymbolCompanion, SharedKbsonBsonTimestampCompanion, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedKotlinByteIterator, SharedLibrary_baseLogLevel, SharedLibrary_baseRealmClassKind, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedLibrary_baseRealmStorageType;
 
-@protocol SharedPlatform, SharedUUIDString, SharedNetworkRequesterInterface, SharedCancellableInterface, SharedGetCurrentWeatherRepositoryInterface, SharedKotlinKClass, SharedLibrary_baseRealm, SharedLibrary_baseDeleteable, SharedLibrary_baseBaseRealmObject, SharedLibrary_baseTypedRealmObject, SharedLibrary_baseRealmObject, SharedLibrary_baseRealmInstant, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier, SharedKotlinx_coroutines_coreFlow, SharedLibrary_baseMutableRealm, SharedLibrary_baseConfiguration, SharedLibrary_baseRealmQuery, SharedLibrary_baseRealmSchema, SharedLibrary_baseVersioned, SharedLibrary_baseBaseRealm, SharedLibrary_baseTypedRealm, SharedKotlinComparable, SharedKotlinx_coroutines_coreFlowCollector, SharedLibrary_baseCompactOnLaunchCallback, SharedLibrary_baseInitialDataCallback, SharedLibrary_baseRealmScalarQuery, SharedLibrary_baseRealmSingleQuery, SharedLibrary_baseRealmScalarNullableQuery, SharedLibrary_baseRealmElementQuery, SharedKotlinIterator, SharedLibrary_baseRealmClass, SharedKotlinx_serialization_coreKSerializer, SharedLibrary_baseRealmLogger, SharedLibrary_baseRealmProperty, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedLibrary_baseRealmPropertyType, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinx_serialization_coreSerializersModuleCollector;
+@protocol SharedPlatform, SharedUUIDString, SharedNetworkRequesterInterface, SharedCancellableInterface, SharedGetCurrentWeatherRepositoryInterface, SharedKotlinx_coroutines_coreJob, SharedKotlinKClass, SharedLibrary_baseRealm, SharedLibrary_baseDeleteable, SharedLibrary_baseBaseRealmObject, SharedLibrary_baseTypedRealmObject, SharedLibrary_baseRealmObject, SharedLibrary_baseRealmInstant, SharedKotlinx_coroutines_coreChildHandle, SharedKotlinx_coroutines_coreChildJob, SharedKotlinx_coroutines_coreDisposableHandle, SharedKotlinSequence, SharedKotlinx_coroutines_coreSelectClause0, SharedKotlinCoroutineContextKey, SharedKotlinCoroutineContextElement, SharedKotlinCoroutineContext, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier, SharedKotlinx_coroutines_coreFlow, SharedLibrary_baseMutableRealm, SharedLibrary_baseConfiguration, SharedLibrary_baseRealmQuery, SharedLibrary_baseRealmSchema, SharedLibrary_baseVersioned, SharedLibrary_baseBaseRealm, SharedLibrary_baseTypedRealm, SharedKotlinComparable, SharedKotlinx_coroutines_coreParentJob, SharedKotlinIterator, SharedKotlinx_coroutines_coreSelectInstance, SharedKotlinx_coroutines_coreSelectClause, SharedKotlinx_coroutines_coreFlowCollector, SharedLibrary_baseCompactOnLaunchCallback, SharedLibrary_baseInitialDataCallback, SharedLibrary_baseRealmScalarQuery, SharedLibrary_baseRealmSingleQuery, SharedLibrary_baseRealmScalarNullableQuery, SharedLibrary_baseRealmElementQuery, SharedLibrary_baseRealmClass, SharedKotlinx_serialization_coreKSerializer, SharedLibrary_baseRealmLogger, SharedLibrary_baseRealmProperty, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedLibrary_baseRealmPropertyType, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinx_serialization_coreSerializersModuleCollector;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -272,7 +272,7 @@ __attribute__((swift_name("GetSearchedWeatherUseCase")))
 @interface SharedGetSearchedWeatherUseCase : SharedBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (void)getLatestSearchesEmitValue:(void (^)(SharedInt *))emitValue __attribute__((swift_name("getLatestSearches(emitValue:)")));
+- (SharedCancellableJob *)getLatestSearchesEmitValue:(void (^)(SharedInt *))emitValue __attribute__((swift_name("getLatestSearches(emitValue:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -298,6 +298,19 @@ __attribute__((swift_name("ViewMyWeatherListUseCase")))
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (SharedViewMyWeatherListDomainModel *)view __attribute__((swift_name("view()")));
+@end
+
+__attribute__((swift_name("CancellableInterface")))
+@protocol SharedCancellableInterface
+@required
+- (void)cancel __attribute__((swift_name("cancel()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CancellableJob")))
+@interface SharedCancellableJob : SharedBase <SharedCancellableInterface>
+- (instancetype)initWithJob:(id<SharedKotlinx_coroutines_coreJob>)job __attribute__((swift_name("init(job:)"))) __attribute__((objc_designated_initializer));
+- (void)cancel __attribute__((swift_name("cancel()")));
 @end
 
 __attribute__((swift_name("RealmDatabase")))
@@ -435,12 +448,6 @@ __attribute__((swift_name("WeatherRepository")))
 - (id<SharedCancellableInterface>)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedWeatherDataModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
-__attribute__((swift_name("CancellableInterface")))
-@protocol SharedCancellableInterface
-@required
-- (void)cancel __attribute__((swift_name("cancel()")));
-@end
-
 __attribute__((swift_name("NetworkRequesterInterface")))
 @protocol SharedNetworkRequesterInterface
 @required
@@ -457,6 +464,55 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Platform_iosKt")))
 @interface SharedPlatform_iosKt : SharedBase
 + (id<SharedPlatform>)getPlatform __attribute__((swift_name("getPlatform()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlin.SinceKotlin(version="1.3")
+*/
+__attribute__((swift_name("KotlinCoroutineContext")))
+@protocol SharedKotlinCoroutineContext
+@required
+- (id _Nullable)foldInitial:(id _Nullable)initial operation:(id _Nullable (^)(id _Nullable, id<SharedKotlinCoroutineContextElement>))operation __attribute__((swift_name("fold(initial:operation:)")));
+- (id<SharedKotlinCoroutineContextElement> _Nullable)getKey:(id<SharedKotlinCoroutineContextKey>)key __attribute__((swift_name("get(key:)")));
+- (id<SharedKotlinCoroutineContext>)minusKeyKey:(id<SharedKotlinCoroutineContextKey>)key __attribute__((swift_name("minusKey(key:)")));
+- (id<SharedKotlinCoroutineContext>)plusContext:(id<SharedKotlinCoroutineContext>)context __attribute__((swift_name("plus(context:)")));
+@end
+
+__attribute__((swift_name("KotlinCoroutineContextElement")))
+@protocol SharedKotlinCoroutineContextElement <SharedKotlinCoroutineContext>
+@required
+@property (readonly) id<SharedKotlinCoroutineContextKey> key __attribute__((swift_name("key")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreJob")))
+@protocol SharedKotlinx_coroutines_coreJob <SharedKotlinCoroutineContextElement>
+@required
+- (id<SharedKotlinx_coroutines_coreChildHandle>)attachChildChild:(id<SharedKotlinx_coroutines_coreChildJob>)child __attribute__((swift_name("attachChild(child:)")));
+- (void)cancelCause:(SharedKotlinCancellationException * _Nullable)cause __attribute__((swift_name("cancel(cause:)")));
+- (SharedKotlinCancellationException *)getCancellationException __attribute__((swift_name("getCancellationException()")));
+- (id<SharedKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionHandler:(void (^)(SharedKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(handler:)")));
+- (id<SharedKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionOnCancelling:(BOOL)onCancelling invokeImmediately:(BOOL)invokeImmediately handler:(void (^)(SharedKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(onCancelling:invokeImmediately:handler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)joinWithCompletionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("join(completionHandler:)")));
+- (id<SharedKotlinx_coroutines_coreJob>)plusOther:(id<SharedKotlinx_coroutines_coreJob>)other __attribute__((swift_name("plus(other:)"))) __attribute__((unavailable("Operator '+' on two Job objects is meaningless. Job is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The job to the right of `+` just replaces the job the left of `+`.")));
+- (BOOL)start __attribute__((swift_name("start()")));
+@property (readonly) id<SharedKotlinSequence> children __attribute__((swift_name("children")));
+@property (readonly) BOOL isActive __attribute__((swift_name("isActive")));
+@property (readonly) BOOL isCancelled __attribute__((swift_name("isCancelled")));
+@property (readonly) BOOL isCompleted __attribute__((swift_name("isCompleted")));
+@property (readonly) id<SharedKotlinx_coroutines_coreSelectClause0> onJoin __attribute__((swift_name("onJoin")));
+
+/**
+ * @note annotations
+ *   kotlinx.coroutines.ExperimentalCoroutinesApi
+*/
+@property (readonly) id<SharedKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
 @end
 
 __attribute__((swift_name("KotlinKDeclarationContainer")))
@@ -686,6 +742,50 @@ __attribute__((swift_name("KotlinCancellationException")))
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithCause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreDisposableHandle")))
+@protocol SharedKotlinx_coroutines_coreDisposableHandle
+@required
+- (void)dispose __attribute__((swift_name("dispose()")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreChildHandle")))
+@protocol SharedKotlinx_coroutines_coreChildHandle <SharedKotlinx_coroutines_coreDisposableHandle>
+@required
+- (BOOL)childCancelledCause:(SharedKotlinThrowable *)cause __attribute__((swift_name("childCancelled(cause:)")));
+@property (readonly) id<SharedKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreChildJob")))
+@protocol SharedKotlinx_coroutines_coreChildJob <SharedKotlinx_coroutines_coreJob>
+@required
+- (void)parentCancelledParentJob:(id<SharedKotlinx_coroutines_coreParentJob>)parentJob __attribute__((swift_name("parentCancelled(parentJob:)")));
+@end
+
+__attribute__((swift_name("KotlinSequence")))
+@protocol SharedKotlinSequence
+@required
+- (id<SharedKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause")))
+@protocol SharedKotlinx_coroutines_coreSelectClause
+@required
+@property (readonly) id clauseObject __attribute__((swift_name("clauseObject")));
+@property (readonly) SharedKotlinUnit *(^(^ _Nullable onCancellationConstructor)(id<SharedKotlinx_coroutines_coreSelectInstance>, id _Nullable, id _Nullable))(SharedKotlinThrowable *) __attribute__((swift_name("onCancellationConstructor")));
+@property (readonly) id _Nullable (^processResFunc)(id, id _Nullable, id _Nullable) __attribute__((swift_name("processResFunc")));
+@property (readonly) void (^regFunc)(id, id<SharedKotlinx_coroutines_coreSelectInstance>, id _Nullable) __attribute__((swift_name("regFunc")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
+@protocol SharedKotlinx_coroutines_coreSelectClause0 <SharedKotlinx_coroutines_coreSelectClause>
+@required
+@end
+
+__attribute__((swift_name("KotlinCoroutineContextKey")))
+@protocol SharedKotlinCoroutineContextKey
+@required
 @end
 
 __attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
@@ -1147,6 +1247,38 @@ __attribute__((swift_name("Kotlinx_datetimeInstant.Companion")))
 @property (readonly) SharedKotlinx_datetimeInstant *DISTANT_PAST __attribute__((swift_name("DISTANT_PAST")));
 @end
 
+__attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
+@protocol SharedKotlinx_coroutines_coreParentJob <SharedKotlinx_coroutines_coreJob>
+@required
+- (SharedKotlinCancellationException *)getChildJobCancellationCause __attribute__((swift_name("getChildJobCancellationCause()")));
+@end
+
+__attribute__((swift_name("KotlinIterator")))
+@protocol SharedKotlinIterator
+@required
+- (BOOL)hasNext __attribute__((swift_name("hasNext()")));
+- (id _Nullable)next __attribute__((swift_name("next()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinUnit")))
+@interface SharedKotlinUnit : SharedBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)unit __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedKotlinUnit *shared __attribute__((swift_name("shared")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
+@protocol SharedKotlinx_coroutines_coreSelectInstance
+@required
+- (void)disposeOnCompletionDisposableHandle:(id<SharedKotlinx_coroutines_coreDisposableHandle>)disposableHandle __attribute__((swift_name("disposeOnCompletion(disposableHandle:)")));
+- (void)selectInRegistrationPhaseInternalResult:(id _Nullable)internalResult __attribute__((swift_name("selectInRegistrationPhase(internalResult:)")));
+- (BOOL)trySelectClauseObject:(id)clauseObject result:(id _Nullable)result __attribute__((swift_name("trySelect(clauseObject:result:)")));
+@property (readonly) id<SharedKotlinCoroutineContext> context __attribute__((swift_name("context")));
+@end
+
 __attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
 @protocol SharedKotlinx_coroutines_coreFlowCollector
 @required
@@ -1247,17 +1379,10 @@ __attribute__((swift_name("KotlinPair")))
 @property (readonly) B _Nullable second __attribute__((swift_name("second")));
 @end
 
-__attribute__((swift_name("KotlinIterator")))
-@protocol SharedKotlinIterator
-@required
-- (BOOL)hasNext __attribute__((swift_name("hasNext()")));
-- (id _Nullable)next __attribute__((swift_name("next()")));
-@end
-
 __attribute__((swift_name("Library_baseRealmClass")))
 @protocol SharedLibrary_baseRealmClass
 @required
-- (id<SharedLibrary_baseRealmProperty> _Nullable)getKey:(NSString *)key __attribute__((swift_name("get(key:)")));
+- (id<SharedLibrary_baseRealmProperty> _Nullable)getKey_:(NSString *)key __attribute__((swift_name("get(key_:)")));
 @property (readonly) BOOL isEmbedded __attribute__((swift_name("isEmbedded"))) __attribute__((deprecated("This property has been deprecated.")));
 @property (readonly) SharedLibrary_baseRealmClassKind *kind __attribute__((swift_name("kind")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
