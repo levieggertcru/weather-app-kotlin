@@ -1,7 +1,7 @@
 package com.example.weatherapp.share.data.appdatabase
 
 import com.example.weatherapp.share.data.appdatabase.schema.SearchedWeatherObject
-import com.example.weatherapp.share.data.realmdatabase.RealmDatabase
+import com.example.weatherapp.share.common.realmdatabase.RealmDatabase
 import io.realm.kotlin.types.TypedRealmObject
 import kotlin.reflect.KClass
 

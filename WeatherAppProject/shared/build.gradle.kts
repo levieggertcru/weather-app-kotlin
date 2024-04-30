@@ -1,10 +1,12 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
 
 plugins {
-    alias(libs.plugins.kotlinMultiplatform)
+    //alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    id("io.realm.kotlin") version "1.11.0" // realm
 
-    id("io.realm.kotlin") version "1.11.0"
+    kotlin("multiplatform")
+    kotlin("native.cocoapods")
 }
 
 kotlin {
@@ -24,6 +26,31 @@ kotlin {
         it.binaries.framework {
             baseName = "shared"
             xcf.add(this)
+        }
+    }
+
+    listOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+    ).forEach {
+        it.binaries.staticLib {
+            baseName = "shared"
+        }
+    }
+
+    cocoapods {
+        version = "0.4.1"
+        summary = ""
+        homepage = ""
+        name = "WeatherApp"
+
+        framework {
+
+            baseName = "shared"
+            isStatic = true
+            export(project(":shared"))
+            transitiveExport = false
         }
     }
 
