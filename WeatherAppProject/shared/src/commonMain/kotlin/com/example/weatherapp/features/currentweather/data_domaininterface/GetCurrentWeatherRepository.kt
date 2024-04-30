@@ -9,9 +9,9 @@ class GetCurrentWeatherRepository(
     private val weatherRepository: WeatherRepository
 ): GetCurrentWeatherRepositoryInterface {
 
-    override fun getCurrentWeather(zipCode: String, completion: (currentWeather: CurrentWeatherDomainModel) -> CancellableInterface) {
+    override fun getCurrentWeather(zipCode: String, completion: (currentWeather: CurrentWeatherDomainModel) -> Unit): CancellableInterface {
 
-        weatherRepository.getCurrentWeather(zipCode, {
+        return weatherRepository.getCurrentWeather(zipCode, {
 
             val currentWeather = CurrentWeatherDomainModel(
                 it.locationName,

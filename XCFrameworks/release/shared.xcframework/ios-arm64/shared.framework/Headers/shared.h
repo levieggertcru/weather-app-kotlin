@@ -206,14 +206,14 @@ __attribute__((swift_name("AppFeatureDiContainer")))
 __attribute__((swift_name("GetCurrentWeatherRepositoryInterface")))
 @protocol SharedGetCurrentWeatherRepositoryInterface
 @required
-- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(id<SharedCancellableInterface> (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+- (id<SharedCancellableInterface>)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("GetCurrentWeatherRepository")))
 @interface SharedGetCurrentWeatherRepository : SharedBase <SharedGetCurrentWeatherRepositoryInterface>
 - (instancetype)initWithWeatherRepository:(SharedWeatherRepository *)weatherRepository __attribute__((swift_name("init(weatherRepository:)"))) __attribute__((objc_designated_initializer));
-- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(id<SharedCancellableInterface> (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+- (id<SharedCancellableInterface>)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -264,7 +264,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("GetCurrentWeatherUseCase")))
 @interface SharedGetCurrentWeatherUseCase : SharedBase
 - (instancetype)initWithGetCurrentWeatherInterface:(id<SharedGetCurrentWeatherRepositoryInterface>)getCurrentWeatherInterface __attribute__((swift_name("init(getCurrentWeatherInterface:)"))) __attribute__((objc_designated_initializer));
-- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(id<SharedCancellableInterface> (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+- (id<SharedCancellableInterface>)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -412,7 +412,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("WeatherAPICurrentWeatherMethod")))
 @interface SharedWeatherAPICurrentWeatherMethod : SharedBase
 - (instancetype)initWithNetworkRequester:(id<SharedNetworkRequesterInterface>)networkRequester environment:(SharedWeatherAPIEnvironment *)environment __attribute__((swift_name("init(networkRequester:environment:)"))) __attribute__((objc_designated_initializer));
-- (void)getCurrentZipCode:(NSString *)zipCode completion:(id<SharedCancellableInterface> (^)(SharedWeatherDataModel *))completion __attribute__((swift_name("getCurrent(zipCode:completion:)")));
+- (id<SharedCancellableInterface>)getCurrentZipCode:(NSString *)zipCode completion:(void (^)(SharedWeatherDataModel *))completion __attribute__((swift_name("getCurrent(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -432,7 +432,7 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("WeatherRepository")))
 @interface SharedWeatherRepository : SharedBase
 - (instancetype)initWithApi:(SharedWeatherAPI *)api __attribute__((swift_name("init(api:)"))) __attribute__((objc_designated_initializer));
-- (void)getCurrentWeatherZipCode:(NSString *)zipCode completion:(id<SharedCancellableInterface> (^)(SharedWeatherDataModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+- (id<SharedCancellableInterface>)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedWeatherDataModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
 __attribute__((swift_name("CancellableInterface")))
@@ -444,7 +444,7 @@ __attribute__((swift_name("CancellableInterface")))
 __attribute__((swift_name("NetworkRequesterInterface")))
 @protocol SharedNetworkRequesterInterface
 @required
-- (void)sendGetRequestUrl:(NSString *)url completion:(id<SharedCancellableInterface> (^)(NSArray<NSDictionary<NSString *, id> *> *))completion __attribute__((swift_name("sendGetRequest(url:completion:)")));
+- (id<SharedCancellableInterface>)sendGetRequestUrl:(NSString *)url completion:(void (^)(NSArray<NSDictionary<NSString *, id> *> *))completion __attribute__((swift_name("sendGetRequest(url:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))

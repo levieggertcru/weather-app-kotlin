@@ -1,12 +1,12 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.apple.XCFramework
 
 plugins {
-    //alias(libs.plugins.kotlinMultiplatform)
+    alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     id("io.realm.kotlin") version "1.11.0" // realm
 
-    kotlin("multiplatform")
-    kotlin("native.cocoapods")
+    //kotlin("multiplatform")
+    //kotlin("native.cocoapods")
 }
 
 kotlin {
@@ -28,7 +28,7 @@ kotlin {
             xcf.add(this)
         }
     }
-
+    /*
     listOf(
         iosX64(),
         iosArm64(),
@@ -52,7 +52,7 @@ kotlin {
             export(project(":shared"))
             transitiveExport = false
         }
-    }
+    }*/
 
     sourceSets {
         commonMain.dependencies {

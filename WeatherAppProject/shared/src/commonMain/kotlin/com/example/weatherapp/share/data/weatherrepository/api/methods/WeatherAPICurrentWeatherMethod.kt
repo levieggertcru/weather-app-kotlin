@@ -10,7 +10,7 @@ class WeatherAPICurrentWeatherMethod(
     private val environment: WeatherAPIEnvironment
 ) {
 
-    fun getCurrent(zipCode: String, completion: (currentWeather: WeatherDataModel) -> CancellableInterface) {
+    fun getCurrent(zipCode: String, completion: (currentWeather: WeatherDataModel) -> Unit): CancellableInterface {
 
         val apiKey: String = environment.apiKey
         val q: String = zipCode

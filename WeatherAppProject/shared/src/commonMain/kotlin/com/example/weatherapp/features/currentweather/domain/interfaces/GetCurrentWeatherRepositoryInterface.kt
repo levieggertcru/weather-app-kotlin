@@ -5,5 +5,5 @@ import com.example.weatherapp.share.interfaces.cancellable.CancellableInterface
 
 interface GetCurrentWeatherRepositoryInterface {
 
-    fun getCurrentWeather(zipCode: String, completion: (currentWeather: CurrentWeatherDomainModel) -> CancellableInterface)
+    fun getCurrentWeather(zipCode: String, completion: (currentWeather: CurrentWeatherDomainModel) -> Unit): CancellableInterface
 }

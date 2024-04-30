@@ -7,8 +7,8 @@ class WeatherRepository(
     private val api: WeatherAPI
 ) {
 
-    fun getCurrentWeather(zipCode: String, completion: (currentWeather: WeatherDataModel) -> CancellableInterface) {
+    fun getCurrentWeather(zipCode: String, completion: (currentWeather: WeatherDataModel) -> Unit): CancellableInterface {
 
-        api.method.currentWeather.getCurrent(zipCode, completion)
+        return api.method.currentWeather.getCurrent(zipCode, completion)
     }
 }
