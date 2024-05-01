@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedAppFeatureDiContainer, SharedCurrentWeatherDiContainer, SharedCurrentWeatherDomainModel, SharedWeatherRepository, SharedCurrentWeatherDataLayerDependencies, SharedCurrentWeatherDomainLayerDependencies, SharedGetCurrentWeatherUseCase, SharedGetSearchedWeatherUseCase, SharedCancellableJob, SharedWeatherListItemDomainModel, SharedViewMyWeatherListDomainModel, SharedRealmDatabase, SharedSearchedWeatherObjectCompanion, SharedKbsonBsonObjectId, SharedKotlinx_datetimeInstant, SharedAppDatabase, SharedSearchedWeatherDataModel, SharedWeatherAPIMethods, SharedWeatherAPIEnvironment, SharedWeatherAPICurrentWeatherMethod, SharedWeatherAPIEnvironmentCompanion, SharedWeatherDataModel, SharedWeatherAPI, SharedKotlinCancellationException, SharedKotlinThrowable, SharedKotlinArray<T>, SharedLibrary_baseVersionId, SharedKbsonBsonValueCompanion, SharedKbsonBsonValue, SharedKbsonBsonBinary, SharedKbsonBsonBoolean, SharedKbsonBsonMaxKey, SharedKbsonBsonMinKey, SharedKbsonBsonNull, SharedKbsonBsonUndefined, SharedKbsonBsonDBPointer, SharedKbsonBsonDateTime, SharedKbsonBsonDecimal128, SharedKbsonBsonDouble, SharedKbsonBsonInt32, SharedKbsonBsonInt64, SharedKbsonBsonJavaScript, SharedKbsonBsonJavaScriptWithScope, SharedKbsonBsonNumber, SharedKbsonBsonRegularExpression, SharedKbsonBsonString, SharedKbsonBsonSymbol, SharedKbsonBsonTimestamp, SharedKbsonBsonType, SharedKbsonBsonObjectIdCompanion, SharedKotlinByteArray, SharedKotlinx_datetimeInstantCompanion, SharedKotlinException, SharedKotlinRuntimeException, SharedKotlinIllegalStateException, SharedKotlinUnit, SharedLibrary_baseUpdatePolicy, SharedLibrary_baseInitialRealmFileConfiguration, SharedLibrary_baseLogConfiguration, SharedLibrary_baseSort, SharedKotlinPair<__covariant A, __covariant B>, SharedKbsonBsonBinarySubType, SharedKbsonBsonBinaryCompanion, SharedKbsonBsonBooleanCompanion, SharedKbsonBsonDBPointerCompanion, SharedKbsonBsonDateTimeCompanion, SharedKbsonBsonDecimal128Companion, SharedKbsonBsonDoubleCompanion, SharedKbsonBsonInt32Companion, SharedKbsonBsonInt64Companion, SharedKbsonBsonJavaScriptCompanion, SharedKbsonBsonJavaScriptWithScopeCompanion, SharedKbsonBsonRegularExpressionCompanion, SharedKbsonBsonStringCompanion, SharedKbsonBsonSymbolCompanion, SharedKbsonBsonTimestampCompanion, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedKotlinByteIterator, SharedLibrary_baseLogLevel, SharedLibrary_baseRealmClassKind, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedLibrary_baseRealmStorageType;
+@class SharedAppFeatureDiContainer, SharedCurrentWeatherDiContainer, SharedCurrentWeatherDomainModel, SharedWeatherRepository, SharedWeatherSearchDomainModel, SharedFlowWrapper<__covariant T>, SharedSearchedWeatherRepository, SharedAppDatabase, SharedCurrentWeatherDataLayerDependencies, SharedCurrentWeatherDomainLayerDependencies, SharedGetLatestWeatherSearchesUseCase, SharedSearchCurrentWeatherUseCase, SharedWeatherListItemDomainModel, SharedViewMyWeatherListDomainModel, SharedKotlinThrowable, SharedRealmDatabase, SharedSearchedWeatherObjectCompanion, SharedKbsonBsonObjectId, SharedSearchedWeatherDataModel, SharedWeatherAPIMethods, SharedWeatherAPIEnvironment, SharedWeatherAPICurrentWeatherMethod, SharedWeatherAPIEnvironmentCompanion, SharedWeatherDataModel, SharedWeatherAPI, SharedKotlinCancellationException, SharedKotlinArray<T>, SharedLibrary_baseVersionId, SharedKbsonBsonValueCompanion, SharedKbsonBsonValue, SharedKbsonBsonBinary, SharedKbsonBsonBoolean, SharedKbsonBsonMaxKey, SharedKbsonBsonMinKey, SharedKbsonBsonNull, SharedKbsonBsonUndefined, SharedKbsonBsonDBPointer, SharedKbsonBsonDateTime, SharedKbsonBsonDecimal128, SharedKbsonBsonDouble, SharedKbsonBsonInt32, SharedKbsonBsonInt64, SharedKbsonBsonJavaScript, SharedKbsonBsonJavaScriptWithScope, SharedKbsonBsonNumber, SharedKbsonBsonRegularExpression, SharedKbsonBsonString, SharedKbsonBsonSymbol, SharedKbsonBsonTimestamp, SharedKbsonBsonType, SharedKbsonBsonObjectIdCompanion, SharedKotlinByteArray, SharedKotlinException, SharedKotlinRuntimeException, SharedKotlinIllegalStateException, SharedKotlinUnit, SharedLibrary_baseUpdatePolicy, SharedLibrary_baseInitialRealmFileConfiguration, SharedLibrary_baseLogConfiguration, SharedLibrary_baseSort, SharedKotlinPair<__covariant A, __covariant B>, SharedKbsonBsonBinarySubType, SharedKbsonBsonBinaryCompanion, SharedKbsonBsonBooleanCompanion, SharedKbsonBsonDBPointerCompanion, SharedKbsonBsonDateTimeCompanion, SharedKbsonBsonDecimal128Companion, SharedKbsonBsonDoubleCompanion, SharedKbsonBsonInt32Companion, SharedKbsonBsonInt64Companion, SharedKbsonBsonJavaScriptCompanion, SharedKbsonBsonJavaScriptWithScopeCompanion, SharedKbsonBsonRegularExpressionCompanion, SharedKbsonBsonStringCompanion, SharedKbsonBsonSymbolCompanion, SharedKbsonBsonTimestampCompanion, SharedKotlinEnumCompanion, SharedKotlinEnum<E>, SharedKotlinByteIterator, SharedLibrary_baseLogLevel, SharedLibrary_baseRealmClassKind, SharedKotlinx_serialization_coreSerializersModule, SharedKotlinx_serialization_coreSerialKind, SharedKotlinNothing, SharedLibrary_baseRealmStorageType;
 
-@protocol SharedPlatform, SharedUUIDString, SharedNetworkRequesterInterface, SharedCancellableInterface, SharedGetCurrentWeatherRepositoryInterface, SharedKotlinx_coroutines_coreJob, SharedKotlinKClass, SharedLibrary_baseRealm, SharedLibrary_baseDeleteable, SharedLibrary_baseBaseRealmObject, SharedLibrary_baseTypedRealmObject, SharedLibrary_baseRealmObject, SharedLibrary_baseRealmInstant, SharedKotlinx_coroutines_coreChildHandle, SharedKotlinx_coroutines_coreChildJob, SharedKotlinx_coroutines_coreDisposableHandle, SharedKotlinSequence, SharedKotlinx_coroutines_coreSelectClause0, SharedKotlinCoroutineContextKey, SharedKotlinCoroutineContextElement, SharedKotlinCoroutineContext, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier, SharedKotlinx_coroutines_coreFlow, SharedLibrary_baseMutableRealm, SharedLibrary_baseConfiguration, SharedLibrary_baseRealmQuery, SharedLibrary_baseRealmSchema, SharedLibrary_baseVersioned, SharedLibrary_baseBaseRealm, SharedLibrary_baseTypedRealm, SharedKotlinComparable, SharedKotlinx_coroutines_coreParentJob, SharedKotlinIterator, SharedKotlinx_coroutines_coreSelectInstance, SharedKotlinx_coroutines_coreSelectClause, SharedKotlinx_coroutines_coreFlowCollector, SharedLibrary_baseCompactOnLaunchCallback, SharedLibrary_baseInitialDataCallback, SharedLibrary_baseRealmScalarQuery, SharedLibrary_baseRealmSingleQuery, SharedLibrary_baseRealmScalarNullableQuery, SharedLibrary_baseRealmElementQuery, SharedLibrary_baseRealmClass, SharedKotlinx_serialization_coreKSerializer, SharedLibrary_baseRealmLogger, SharedLibrary_baseRealmProperty, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedLibrary_baseRealmPropertyType, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinx_serialization_coreSerializersModuleCollector;
+@protocol SharedPlatform, SharedUUIDString, SharedNetworkRequesterInterface, SharedCancellableInterface, SharedGetCurrentWeatherRepositoryInterface, SharedGetLatestWeatherSearchesRepositoryInterface, SharedStoreSearchedWeatherRepositoryInterface, SharedKotlinx_coroutines_coreJob, SharedKotlinx_coroutines_coreFlow, SharedKotlinKClass, SharedLibrary_baseRealm, SharedLibrary_baseDeleteable, SharedLibrary_baseBaseRealmObject, SharedLibrary_baseTypedRealmObject, SharedLibrary_baseRealmObject, SharedLibrary_baseRealmInstant, SharedKotlinx_coroutines_coreChildHandle, SharedKotlinx_coroutines_coreChildJob, SharedKotlinx_coroutines_coreDisposableHandle, SharedKotlinSequence, SharedKotlinx_coroutines_coreSelectClause0, SharedKotlinCoroutineContextKey, SharedKotlinCoroutineContextElement, SharedKotlinCoroutineContext, SharedKotlinx_coroutines_coreFlowCollector, SharedKotlinKDeclarationContainer, SharedKotlinKAnnotatedElement, SharedKotlinKClassifier, SharedLibrary_baseMutableRealm, SharedLibrary_baseConfiguration, SharedLibrary_baseRealmQuery, SharedLibrary_baseRealmSchema, SharedLibrary_baseVersioned, SharedLibrary_baseBaseRealm, SharedLibrary_baseTypedRealm, SharedKotlinComparable, SharedKotlinx_coroutines_coreParentJob, SharedKotlinIterator, SharedKotlinx_coroutines_coreSelectInstance, SharedKotlinx_coroutines_coreSelectClause, SharedLibrary_baseCompactOnLaunchCallback, SharedLibrary_baseInitialDataCallback, SharedLibrary_baseRealmScalarQuery, SharedLibrary_baseRealmSingleQuery, SharedLibrary_baseRealmScalarNullableQuery, SharedLibrary_baseRealmElementQuery, SharedLibrary_baseRealmClass, SharedKotlinx_serialization_coreKSerializer, SharedLibrary_baseRealmLogger, SharedLibrary_baseRealmProperty, SharedKotlinx_serialization_coreEncoder, SharedKotlinx_serialization_coreSerialDescriptor, SharedKotlinx_serialization_coreSerializationStrategy, SharedKotlinx_serialization_coreDecoder, SharedKotlinx_serialization_coreDeserializationStrategy, SharedLibrary_baseRealmPropertyType, SharedKotlinx_serialization_coreCompositeEncoder, SharedKotlinAnnotation, SharedKotlinx_serialization_coreCompositeDecoder, SharedKotlinx_serialization_coreSerializersModuleCollector;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -216,24 +216,45 @@ __attribute__((swift_name("GetCurrentWeatherRepository")))
 - (id<SharedCancellableInterface>)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
 @end
 
+__attribute__((swift_name("GetLatestWeatherSearchesRepositoryInterface")))
+@protocol SharedGetLatestWeatherSearchesRepositoryInterface
+@required
+- (SharedFlowWrapper<NSArray<SharedWeatherSearchDomainModel *> *> *)getSearches __attribute__((swift_name("getSearches()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("GetLatestWeatherSearchesRepository")))
+@interface SharedGetLatestWeatherSearchesRepository : SharedBase <SharedGetLatestWeatherSearchesRepositoryInterface>
+- (instancetype)initWithSearchedWeatherRepository:(SharedSearchedWeatherRepository *)searchedWeatherRepository __attribute__((swift_name("init(searchedWeatherRepository:)"))) __attribute__((objc_designated_initializer));
+- (SharedFlowWrapper<NSArray<SharedWeatherSearchDomainModel *> *> *)getSearches __attribute__((swift_name("getSearches()")));
+@end
+
+__attribute__((swift_name("StoreSearchedWeatherRepositoryInterface")))
+@protocol SharedStoreSearchedWeatherRepositoryInterface
+@required
+- (void)storeSearchZipCode:(NSString *)zipCode __attribute__((swift_name("storeSearch(zipCode:)")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("StoreSearchedWeatherRepository")))
-@interface SharedStoreSearchedWeatherRepository : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@interface SharedStoreSearchedWeatherRepository : SharedBase <SharedStoreSearchedWeatherRepositoryInterface>
+- (instancetype)initWithSearchedWeatherRepository:(SharedSearchedWeatherRepository *)searchedWeatherRepository __attribute__((swift_name("init(searchedWeatherRepository:)"))) __attribute__((objc_designated_initializer));
+- (void)storeSearchZipCode:(NSString *)zipCode __attribute__((swift_name("storeSearch(zipCode:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CurrentWeatherDataLayerDependencies")))
 @interface SharedCurrentWeatherDataLayerDependencies : SharedBase
-- (instancetype)initWithNetworkRequester:(id<SharedNetworkRequesterInterface>)networkRequester __attribute__((swift_name("init(networkRequester:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNetworkRequester:(id<SharedNetworkRequesterInterface>)networkRequester database:(SharedAppDatabase *)database __attribute__((swift_name("init(networkRequester:database:)"))) __attribute__((objc_designated_initializer));
 - (id<SharedGetCurrentWeatherRepositoryInterface>)getCurrentWeatherRepository __attribute__((swift_name("getCurrentWeatherRepository()")));
+- (id<SharedGetLatestWeatherSearchesRepositoryInterface>)getLatestWeatherSearchesRepository __attribute__((swift_name("getLatestWeatherSearchesRepository()")));
+- (id<SharedStoreSearchedWeatherRepositoryInterface>)getStoreSearchedWeatherRepository __attribute__((swift_name("getStoreSearchedWeatherRepository()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CurrentWeatherDiContainer")))
 @interface SharedCurrentWeatherDiContainer : SharedBase
-- (instancetype)initWithNetworkRequester:(id<SharedNetworkRequesterInterface>)networkRequester __attribute__((swift_name("init(networkRequester:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNetworkRequester:(id<SharedNetworkRequesterInterface>)networkRequester database:(SharedAppDatabase *)database __attribute__((swift_name("init(networkRequester:database:)"))) __attribute__((objc_designated_initializer));
 @property (readonly) SharedCurrentWeatherDataLayerDependencies *dataLayer __attribute__((swift_name("dataLayer")));
 @property (readonly) SharedCurrentWeatherDomainLayerDependencies *domainLayer __attribute__((swift_name("domainLayer")));
 @end
@@ -242,8 +263,8 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CurrentWeatherDomainLayerDependencies")))
 @interface SharedCurrentWeatherDomainLayerDependencies : SharedBase
 - (instancetype)initWithDataLayer:(SharedCurrentWeatherDataLayerDependencies *)dataLayer __attribute__((swift_name("init(dataLayer:)"))) __attribute__((objc_designated_initializer));
-- (SharedGetCurrentWeatherUseCase *)getCurrentWeatherUseCase __attribute__((swift_name("getCurrentWeatherUseCase()")));
-- (SharedGetSearchedWeatherUseCase *)getSearchedWeatherUseCase __attribute__((swift_name("getSearchedWeatherUseCase()")));
+- (SharedGetLatestWeatherSearchesUseCase *)getLatestWeatherSearchesUseCase __attribute__((swift_name("getLatestWeatherSearchesUseCase()")));
+- (SharedSearchCurrentWeatherUseCase *)getSearchCurrentWeatherUseCase __attribute__((swift_name("getSearchCurrentWeatherUseCase()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -255,24 +276,25 @@ __attribute__((swift_name("CurrentWeatherDomainModel")))
 @property (readonly) NSString *temperatureInFahrenheit __attribute__((swift_name("temperatureInFahrenheit")));
 @end
 
-__attribute__((swift_name("StoreSearchedWeatherRepositoryInterface")))
-@protocol SharedStoreSearchedWeatherRepositoryInterface
-@required
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("WeatherSearchDomainModel")))
+@interface SharedWeatherSearchDomainModel : SharedBase
+- (instancetype)initWithZipCode:(NSString *)zipCode __attribute__((swift_name("init(zipCode:)"))) __attribute__((objc_designated_initializer));
+@property (readonly) NSString *zipCode __attribute__((swift_name("zipCode")));
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("GetCurrentWeatherUseCase")))
-@interface SharedGetCurrentWeatherUseCase : SharedBase
-- (instancetype)initWithGetCurrentWeatherInterface:(id<SharedGetCurrentWeatherRepositoryInterface>)getCurrentWeatherInterface __attribute__((swift_name("init(getCurrentWeatherInterface:)"))) __attribute__((objc_designated_initializer));
-- (id<SharedCancellableInterface>)getCurrentWeatherZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("getCurrentWeather(zipCode:completion:)")));
+__attribute__((swift_name("GetLatestWeatherSearchesUseCase")))
+@interface SharedGetLatestWeatherSearchesUseCase : SharedBase
+- (instancetype)initWithGetLatestWeatherSearchesRepository:(id<SharedGetLatestWeatherSearchesRepositoryInterface>)getLatestWeatherSearchesRepository __attribute__((swift_name("init(getLatestWeatherSearchesRepository:)"))) __attribute__((objc_designated_initializer));
+- (SharedFlowWrapper<NSArray<SharedWeatherSearchDomainModel *> *> *)getSearches __attribute__((swift_name("getSearches()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("GetSearchedWeatherUseCase")))
-@interface SharedGetSearchedWeatherUseCase : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (SharedCancellableJob *)getLatestSearchesEmitValue:(void (^)(SharedInt *))emitValue __attribute__((swift_name("getLatestSearches(emitValue:)")));
+__attribute__((swift_name("SearchCurrentWeatherUseCase")))
+@interface SharedSearchCurrentWeatherUseCase : SharedBase
+- (instancetype)initWithGetCurrentWeatherRepository:(id<SharedGetCurrentWeatherRepositoryInterface>)getCurrentWeatherRepository storeSearchedWeatherRepository:(id<SharedStoreSearchedWeatherRepositoryInterface>)storeSearchedWeatherRepository __attribute__((swift_name("init(getCurrentWeatherRepository:storeSearchedWeatherRepository:)"))) __attribute__((objc_designated_initializer));
+- (id<SharedCancellableInterface>)searchZipCode:(NSString *)zipCode completion:(void (^)(SharedCurrentWeatherDomainModel *))completion __attribute__((swift_name("search(zipCode:completion:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -311,6 +333,14 @@ __attribute__((swift_name("CancellableJob")))
 @interface SharedCancellableJob : SharedBase <SharedCancellableInterface>
 - (instancetype)initWithJob:(id<SharedKotlinx_coroutines_coreJob>)job __attribute__((swift_name("init(job:)"))) __attribute__((objc_designated_initializer));
 - (void)cancel __attribute__((swift_name("cancel()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("FlowWrapper")))
+@interface SharedFlowWrapper<__covariant T> : SharedBase
+- (instancetype)initWithFlow:(id<SharedKotlinx_coroutines_coreFlow>)flow __attribute__((swift_name("init(flow:)"))) __attribute__((objc_designated_initializer));
+- (id<SharedCancellableInterface>)collectOnEach:(void (^)(T))onEach onCompletion:(void (^)(SharedKotlinThrowable * _Nullable))onCompletion __attribute__((swift_name("collect(onEach:onCompletion:)")));
+@property (readonly) id<SharedKotlinx_coroutines_coreFlow> flow __attribute__((swift_name("flow")));
 @end
 
 __attribute__((swift_name("RealmDatabase")))
@@ -358,6 +388,7 @@ __attribute__((swift_name("SearchedWeatherObject")))
 - (NSString *)description __attribute__((swift_name("description()")));
 @property SharedKbsonBsonObjectId *_id __attribute__((swift_name("_id")));
 @property id<SharedLibrary_baseRealmInstant> _Nullable createdAt __attribute__((swift_name("createdAt")));
+@property NSString *uuid __attribute__((swift_name("uuid")));
 @property NSString *zipCode __attribute__((swift_name("zipCode")));
 @end
 
@@ -375,9 +406,8 @@ __attribute__((swift_name("SearchedWeatherObject.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SearchedWeatherDataModel")))
 @interface SharedSearchedWeatherDataModel : SharedBase
-- (instancetype)initWithId:(NSString *)id searchDate:(SharedKotlinx_datetimeInstant *)searchDate zipCode:(NSString *)zipCode __attribute__((swift_name("init(id:searchDate:zipCode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(NSString *)id zipCode:(NSString *)zipCode __attribute__((swift_name("init(id:zipCode:)"))) __attribute__((objc_designated_initializer));
 @property (readonly) NSString *id __attribute__((swift_name("id")));
-@property (readonly) SharedKotlinx_datetimeInstant *searchDate __attribute__((swift_name("searchDate")));
 @property (readonly) NSString *zipCode __attribute__((swift_name("zipCode")));
 @end
 
@@ -385,7 +415,10 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("SearchedWeatherRepository")))
 @interface SharedSearchedWeatherRepository : SharedBase
 - (instancetype)initWithDatabase:(SharedAppDatabase *)database __attribute__((swift_name("init(database:)"))) __attribute__((objc_designated_initializer));
-- (SharedSearchedWeatherDataModel *)storeSearchedWeatherZipCode:(NSString *)zipCode __attribute__((swift_name("storeSearchedWeather(zipCode:)")));
+- (NSArray<SharedSearchedWeatherDataModel *> *)getAllSearchedWeather __attribute__((swift_name("getAllSearchedWeather()")));
+- (NSArray<SharedSearchedWeatherDataModel *> *)getSearchedWeatherZipCode:(NSString *)zipCode __attribute__((swift_name("getSearchedWeather(zipCode:)")));
+- (id<SharedKotlinx_coroutines_coreFlow>)getSearchedWeatherFlow __attribute__((swift_name("getSearchedWeatherFlow()")));
+- (void)storeSearchedWeatherZipCode:(NSString *)zipCode __attribute__((swift_name("storeSearchedWeather(zipCode:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -513,6 +546,37 @@ __attribute__((swift_name("Kotlinx_coroutines_coreJob")))
  *   kotlinx.coroutines.ExperimentalCoroutinesApi
 */
 @property (readonly) id<SharedKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
+@end
+
+__attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
+@protocol SharedKotlinx_coroutines_coreFlow
+@required
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)collectCollector:(id<SharedKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
+@end
+
+__attribute__((swift_name("KotlinThrowable")))
+@interface SharedKotlinThrowable : SharedBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+
+/**
+ * @note annotations
+ *   kotlin.experimental.ExperimentalNativeApi
+*/
+- (SharedKotlinArray<NSString *> *)getStackTrace __attribute__((swift_name("getStackTrace()")));
+- (void)printStackTrace __attribute__((swift_name("printStackTrace()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) SharedKotlinThrowable * _Nullable cause __attribute__((swift_name("cause")));
+@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+- (NSError *)asError __attribute__((swift_name("asError()")));
 @end
 
 __attribute__((swift_name("KotlinKDeclarationContainer")))
@@ -667,42 +731,6 @@ __attribute__((swift_name("Library_baseRealmInstant")))
 @property (readonly) int32_t nanosecondsOfSecond __attribute__((swift_name("nanosecondsOfSecond")));
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Kotlinx_datetimeInstant")))
-@interface SharedKotlinx_datetimeInstant : SharedBase <SharedKotlinComparable>
-@property (class, readonly, getter=companion) SharedKotlinx_datetimeInstantCompanion *companion __attribute__((swift_name("companion")));
-- (int32_t)compareToOther:(SharedKotlinx_datetimeInstant *)other __attribute__((swift_name("compareTo(other:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (SharedKotlinx_datetimeInstant *)minusDuration:(int64_t)duration __attribute__((swift_name("minus(duration:)")));
-- (int64_t)minusOther:(SharedKotlinx_datetimeInstant *)other __attribute__((swift_name("minus(other:)")));
-- (SharedKotlinx_datetimeInstant *)plusDuration:(int64_t)duration __attribute__((swift_name("plus(duration:)")));
-- (int64_t)toEpochMilliseconds __attribute__((swift_name("toEpochMilliseconds()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) int64_t epochSeconds __attribute__((swift_name("epochSeconds")));
-@property (readonly) int32_t nanosecondsOfSecond __attribute__((swift_name("nanosecondsOfSecond")));
-@end
-
-__attribute__((swift_name("KotlinThrowable")))
-@interface SharedKotlinThrowable : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithCause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * @note annotations
- *   kotlin.experimental.ExperimentalNativeApi
-*/
-- (SharedKotlinArray<NSString *> *)getStackTrace __attribute__((swift_name("getStackTrace()")));
-- (void)printStackTrace __attribute__((swift_name("printStackTrace()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) SharedKotlinThrowable * _Nullable cause __attribute__((swift_name("cause")));
-@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
-- (NSError *)asError __attribute__((swift_name("asError()")));
-@end
-
 __attribute__((swift_name("KotlinException")))
 @interface SharedKotlinException : SharedKotlinThrowable
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -788,15 +816,27 @@ __attribute__((swift_name("KotlinCoroutineContextKey")))
 @required
 @end
 
-__attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
-@protocol SharedKotlinx_coroutines_coreFlow
+__attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
+@protocol SharedKotlinx_coroutines_coreFlowCollector
 @required
 
 /**
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)collectCollector:(id<SharedKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
+- (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinArray")))
+@interface SharedKotlinArray<T> : SharedBase
++ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(SharedInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (id<SharedKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
 @end
 
 __attribute__((swift_name("Library_baseMutableRealm")))
@@ -847,18 +887,6 @@ __attribute__((swift_name("Library_baseRealmQuery")))
 - (id<SharedLibrary_baseRealmQuery>)sortPropertyAndSortOrder:(SharedKotlinPair<NSString *, SharedLibrary_baseSort *> *)propertyAndSortOrder additionalPropertiesAndOrders:(SharedKotlinArray<SharedKotlinPair<NSString *, SharedLibrary_baseSort *> *> *)additionalPropertiesAndOrders __attribute__((swift_name("sort(propertyAndSortOrder:additionalPropertiesAndOrders:)")));
 - (id<SharedLibrary_baseRealmQuery>)sortProperty:(NSString *)property sortOrder:(SharedLibrary_baseSort *)sortOrder __attribute__((swift_name("sort(property:sortOrder:)")));
 - (id<SharedLibrary_baseRealmScalarQuery>)sumProperty:(NSString *)property type:(id<SharedKotlinKClass>)type __attribute__((swift_name("sum(property:type:)")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinArray")))
-@interface SharedKotlinArray<T> : SharedBase
-+ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(SharedInt *))init __attribute__((swift_name("init(size:init:)")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
-- (id<SharedKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
 @end
 
 __attribute__((swift_name("Library_baseRealmSchema")))
@@ -1230,23 +1258,6 @@ __attribute__((swift_name("KotlinByteArray")))
 @property (readonly) int32_t size __attribute__((swift_name("size")));
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Kotlinx_datetimeInstant.Companion")))
-@interface SharedKotlinx_datetimeInstantCompanion : SharedBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) SharedKotlinx_datetimeInstantCompanion *shared __attribute__((swift_name("shared")));
-- (SharedKotlinx_datetimeInstant *)fromEpochMillisecondsEpochMilliseconds:(int64_t)epochMilliseconds __attribute__((swift_name("fromEpochMilliseconds(epochMilliseconds:)")));
-- (SharedKotlinx_datetimeInstant *)fromEpochSecondsEpochSeconds:(int64_t)epochSeconds nanosecondAdjustment:(int32_t)nanosecondAdjustment __attribute__((swift_name("fromEpochSeconds(epochSeconds:nanosecondAdjustment:)")));
-- (SharedKotlinx_datetimeInstant *)fromEpochSecondsEpochSeconds:(int64_t)epochSeconds nanosecondAdjustment_:(int64_t)nanosecondAdjustment __attribute__((swift_name("fromEpochSeconds(epochSeconds:nanosecondAdjustment_:)")));
-- (SharedKotlinx_datetimeInstant *)now __attribute__((swift_name("now()"))) __attribute__((unavailable("Use Clock.System.now() instead")));
-- (SharedKotlinx_datetimeInstant *)parseIsoString:(NSString *)isoString __attribute__((swift_name("parse(isoString:)")));
-- (id<SharedKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@property (readonly) SharedKotlinx_datetimeInstant *DISTANT_FUTURE __attribute__((swift_name("DISTANT_FUTURE")));
-@property (readonly) SharedKotlinx_datetimeInstant *DISTANT_PAST __attribute__((swift_name("DISTANT_PAST")));
-@end
-
 __attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
 @protocol SharedKotlinx_coroutines_coreParentJob <SharedKotlinx_coroutines_coreJob>
 @required
@@ -1277,17 +1288,6 @@ __attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
 - (void)selectInRegistrationPhaseInternalResult:(id _Nullable)internalResult __attribute__((swift_name("selectInRegistrationPhase(internalResult:)")));
 - (BOOL)trySelectClauseObject:(id)clauseObject result:(id _Nullable)result __attribute__((swift_name("trySelect(clauseObject:result:)")));
 @property (readonly) id<SharedKotlinCoroutineContext> context __attribute__((swift_name("context")));
-@end
-
-__attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
-@protocol SharedKotlinx_coroutines_coreFlowCollector
-@required
-
-/**
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))

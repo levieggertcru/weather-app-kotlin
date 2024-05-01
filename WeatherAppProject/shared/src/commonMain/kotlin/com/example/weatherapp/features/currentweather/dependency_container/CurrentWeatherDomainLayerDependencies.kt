@@ -1,19 +1,22 @@
 package com.example.weatherapp.features.currentweather.dependency_container
 
-import com.example.weatherapp.features.currentweather.domain.usecases.GetCurrentWeatherUseCase
-import com.example.weatherapp.features.currentweather.domain.usecases.GetSearchedWeatherUseCase
+import com.example.weatherapp.features.currentweather.domain.usecases.GetLatestWeatherSearchesUseCase
+import com.example.weatherapp.features.currentweather.domain.usecases.SearchCurrentWeatherUseCase
 
 class CurrentWeatherDomainLayerDependencies(
     private val dataLayer: CurrentWeatherDataLayerDependencies
 ) {
 
-    fun getCurrentWeatherUseCase(): GetCurrentWeatherUseCase {
-        return GetCurrentWeatherUseCase(
-            dataLayer.getCurrentWeatherRepository()
+    fun getLatestWeatherSearchesUseCase(): GetLatestWeatherSearchesUseCase {
+        return GetLatestWeatherSearchesUseCase(
+            dataLayer.getLatestWeatherSearchesRepository()
         )
     }
 
-    fun getSearchedWeatherUseCase(): GetSearchedWeatherUseCase {
-        return GetSearchedWeatherUseCase()
+    fun getSearchCurrentWeatherUseCase(): SearchCurrentWeatherUseCase {
+        return SearchCurrentWeatherUseCase(
+            dataLayer.getCurrentWeatherRepository(),
+            dataLayer.getStoreSearchedWeatherRepository()
+        )
     }
 }
