@@ -5,6 +5,8 @@ import com.example.weatherapp.features.currentweather.domain.interfaces.GetCurre
 import com.example.weatherapp.share.common.flowwrapper.FlowWrapper
 import com.example.weatherapp.share.data.weatherrepository.WeatherRepository
 import com.example.weatherapp.share.interfaces.cancellable.CancellableInterface
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -22,7 +24,8 @@ class GetCurrentWeatherRepository(
     private fun getCurrentWeatherFlow(zipCode: String): Flow<CurrentWeatherDomainModel> = flow {
 
         getCurrentWeather(zipCode) {
-            GlobalScope.launch {
+
+            CoroutineScope(Dispatchers.Main).launch {
                 emit(it)
             }
         }
