@@ -8,6 +8,8 @@ import com.example.weatherapp.share.interfaces.cancellable.CancellableInterface
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.channels.awaitClose
+import kotlinx.coroutines.channels.trySendBlocking
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.flow
@@ -24,8 +26,15 @@ class GetCurrentWeatherRepository(
 
     private fun getCurrentWeatherFlow(zipCode: String): Flow<CurrentWeatherDomainModel> = callbackFlow {
 
-        getCurrentWeather(zipCode) {
+        val callback: (currentWeather: CurrentWeatherDomainModel) -> Unit = {
+
             trySend(it)
+        }
+
+        val cancellable = getCurrentWeather(zipCode, callback)
+
+        awaitClose {
+            cancellable.cancel()
         }
     }
 
