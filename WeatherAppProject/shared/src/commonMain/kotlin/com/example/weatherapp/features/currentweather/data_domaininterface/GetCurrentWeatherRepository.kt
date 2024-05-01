@@ -9,6 +9,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
 
@@ -21,13 +22,10 @@ class GetCurrentWeatherRepository(
         return FlowWrapper(getCurrentWeatherFlow(zipCode))
     }
 
-    private fun getCurrentWeatherFlow(zipCode: String): Flow<CurrentWeatherDomainModel> = flow {
+    private fun getCurrentWeatherFlow(zipCode: String): Flow<CurrentWeatherDomainModel> = callbackFlow {
 
         getCurrentWeather(zipCode) {
-
-            CoroutineScope(Dispatchers.Main).launch {
-                emit(it)
-            }
+            trySend(it)
         }
     }
 
