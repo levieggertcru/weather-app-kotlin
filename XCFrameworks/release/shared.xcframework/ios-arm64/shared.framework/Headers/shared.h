@@ -423,7 +423,6 @@ __attribute__((swift_name("SearchedWeatherRepository")))
 @interface SharedSearchedWeatherRepository : SharedBase
 - (instancetype)initWithDatabase:(SharedAppDatabase *)database __attribute__((swift_name("init(database:)"))) __attribute__((objc_designated_initializer));
 - (NSArray<SharedSearchedWeatherDataModel *> *)getAllSearchedWeather __attribute__((swift_name("getAllSearchedWeather()")));
-- (NSArray<SharedSearchedWeatherDataModel *> *)getSearchedWeatherZipCode:(NSString *)zipCode __attribute__((swift_name("getSearchedWeather(zipCode:)")));
 - (id<SharedKotlinx_coroutines_coreFlow>)getSearchedWeatherFlow __attribute__((swift_name("getSearchedWeatherFlow()")));
 - (void)storeSearchedWeatherZipCode:(NSString *)zipCode __attribute__((swift_name("storeSearchedWeather(zipCode:)")));
 @end

@@ -8,6 +8,7 @@ import io.realm.kotlin.Realm
 import io.realm.kotlin.ext.query
 import io.realm.kotlin.notifications.ResultsChange
 import io.realm.kotlin.query.RealmResults
+import io.realm.kotlin.query.Sort
 import io.realm.kotlin.types.RealmInstant
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -24,7 +25,10 @@ class SearchedWeatherRepository(
     fun getSearchedWeatherFlow(): Flow<ResultsChange<SearchedWeatherObject>> {
 
         val realm: Realm = database.openRealm()
-        val results: RealmResults<SearchedWeatherObject> = realm.query<SearchedWeatherObject>().find()
+        val results: RealmResults<SearchedWeatherObject> = realm
+            .query<SearchedWeatherObject>()
+            .sort("createdAt", Sort.DESCENDING)
+            .find()
 
         return results.asFlow()
     }
@@ -38,7 +42,7 @@ class SearchedWeatherRepository(
         return mapResults(allSearchedWeather)
     }
 
-    fun getSearchedWeather(zipCode: String): List<SearchedWeatherDataModel> {
+    private fun getWeatherSearchByZipCode(zipCode: String): SearchedWeatherObject? {
 
         val realm: Realm = database.openRealm()
 
@@ -46,7 +50,11 @@ class SearchedWeatherRepository(
             .query<SearchedWeatherObject>("zipCode == $0", zipCode)
             .find()
 
-        return mapResults(results)
+        if (results.isNotEmpty()) {
+            return results.firstOrNull()
+        }
+
+        return null
     }
 
     private fun mapResults(results: RealmResults<SearchedWeatherObject>): List<SearchedWeatherDataModel> {
@@ -61,11 +69,19 @@ class SearchedWeatherRepository(
 
     fun storeSearchedWeather(zipCode: String): Unit {
 
-        if (database.openRealm().query<SearchedWeatherObject>().find().isNotEmpty()) {
-            return
-        }
+        val existingSearch: SearchedWeatherObject? = getWeatherSearchByZipCode(zipCode)
 
-        val uuidString: UUIDString = getUUIDString()
+        if (existingSearch == null) {
+            createNewWeatherSearch(zipCode)
+        }
+        else {
+            existingSearch.let {
+                updateExistingWeatherSearch(it)
+            }
+        }
+    }
+
+    private fun createNewWeatherSearch(zipCode: String) {
 
         GlobalScope.launch {
 
@@ -76,10 +92,24 @@ class SearchedWeatherRepository(
                 val unmanagedSearch = SearchedWeatherObject().apply {
                     this.createdAt = RealmInstant.now()
                     this.zipCode = zipCode
-                    this.uuid = uuidString.newUUIDString()
+                    this.uuid = getUUIDString().newUUIDString()
                 }
 
                 val managedSearch = copyToRealm(unmanagedSearch)
+            }
+        }
+    }
+
+    private fun updateExistingWeatherSearch(weatherObject: SearchedWeatherObject) {
+
+        GlobalScope.launch {
+
+            database.openRealm().write {
+
+                findLatest(weatherObject)?.let {
+
+                    it.createdAt = RealmInstant.now()
+                }
             }
         }
     }
