@@ -19,15 +19,26 @@ kotlin {
         }
     }
 
+    val xcframeworkName = "shared"
     val xcf = XCFramework()
-    val iosTargets = listOf(iosX64(), iosArm64(), iosSimulatorArm64())
 
-    iosTargets.forEach {
+    listOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+    ).forEach {
         it.binaries.framework {
-            baseName = "shared"
+
+            baseName = xcframeworkName
+
+            // Specify CFBundleIdentifier to uniquely identify the framework
+            binaryOption("bundleId", "org.example.${xcframeworkName}")
+
             xcf.add(this)
+            isStatic = true
         }
     }
+
     /*
     listOf(
         iosX64(),

@@ -22,6 +22,10 @@ let package = Package(
         .testTarget(
             name: "WeatherAppKotlinTests",
             dependencies: ["WeatherAppKotlin"]),
-        .binaryTarget(name: "WeatherAppKotlinBinaryPackage", path: "XCFrameworks/release/shared.xcframework")
+        .binaryTarget(
+            name: "WeatherAppKotlinBinaryPackage", 
+            url: "https://github.com/levieggertcru/weather-app-kotlin/tree/main/XCFrameworks/release/e1b5d35a9c2deedc3067f4ca85bf248158776c86ea71330db924505789e2df12/shared.xcframework.zip", 
+            checksum: "e1b5d35a9c2deedc3067f4ca85bf248158776c86ea71330db924505789e2df12"
+        )
     ]
 )
