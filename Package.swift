@@ -24,7 +24,7 @@ let package = Package(
             dependencies: ["WeatherAppKotlin"]),
         .binaryTarget(
             name: "WeatherAppKotlinBinaryPackage", 
-            url: "https://github.com/levieggertcru/weather-app-kotlin/tree/main/XCFrameworks/release/6ba9f7879f93ecb3181d61e4c26086e129ba854278f43e2439c3ada786606c9a/shared.xcframework.zip", 
+            url: "https://github.com/levieggertcru/weather-app-kotlin/releases/download/0.7.1/shared.xcframework.zip", 
             checksum: "6ba9f7879f93ecb3181d61e4c26086e129ba854278f43e2439c3ada786606c9a"
         )
     ]
